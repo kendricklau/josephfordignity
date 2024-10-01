@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph for Dignity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white font-sans">
+    <header id="header" class="bg-white shadow-md fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-2 flex items-center justify-between transition-all duration-300">
+            <img id="logo" src="img/jfd-med.png" alt="Joseph for Dignity Logo" class="h-12 w-auto transition-all duration-300">
+            <div class="flex items-center">
+                <nav class="mr-4">
+                    <ul id="nav-links" class="flex space-x-4 text-sm transition-all duration-300">
+                        <li><a href="#" class="text-gray-600 hover:text-blue-600" onclick="scrollToTop(); return false;">Home</a></li>
+                        <li><a href="#mission" class="text-gray-600 hover:text-blue-600">Mission</a></li>
+                        <li><a href="#sectors" class="text-gray-600 hover:text-blue-600">Sectors</a></li>
+                        <li><a href="#stories" class="text-gray-600 hover:text-blue-600">Stories</a></li>
+                        <li><a href="#partners" class="text-gray-600 hover:text-blue-600">Partners</a></li>
+                        <li>
+                            <a href="financials.html" class="text-gray-600 hover:text-blue-600 flex items-center" target="_blank" rel="noopener noreferrer">
+                                Financials
+                                <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a id="donate-btn" href="#" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-1 px-3 rounded text-sm transition-all duration-300">
+                    Donate Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="space-y-4"> <!-- Add some space between sections -->
+        <section id="hero" class="scroll-mt pt-20 pb-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap -mx-4 mb-12">
+                    <!-- Left half: Logo and Donate button -->
+                    <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0 flex flex-col items-center justify-center">
+                        <img src="img/jfd-large.png" alt="Joseph for Dignity Logo" class="w-64 mb-8">
+                        <a href="#" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded text-lg transition duration-300">
+                            Donate Now
+                        </a>
+                    </div>
+                    <!-- Right half: Mission statement -->
+                    <div class="w-full md:w-1/2 px-4 flex flex-col justify-center">
+                        <h2 class="text-3xl font-bold mb-4 text-blue-600">Joseph for Dignity</h2>
+                        <p class="text-lg">
+                            Our mission is to empower communities worldwide through sustainable development, fostering dignity, and creating lasting positive change.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Hero Carousel Section -->
+        <section id="hero-carousel">
+            <div class="hero-carousel">
+                <div class="hero-logo-stream">
+                    <div class="hero-item">
+                        <img src="img/main-carousel-1.png" alt="Hero Image 1">
+                    </div>
+                    <div class="hero-item">
+                        <img src="img/main-carousel-2.png" alt="Hero Image 2">
+                    </div>
+                    <div class="hero-item">
+                        <img src="img/main-carousel-3.png" alt="Hero Image 3">
+                    </div>
+                    <div class="hero-item">
+                        <img src="img/main-carousel-4.png" alt="Hero Image 4">
+                    </div>
+                    <div class="hero-item">
+                        <img src="img/main-carousel-5.png" alt="Hero Image 5">
+                    </div>
+                    <!-- Duplicate images for seamless loop -->
+                    <div class="hero-item">
+                        <img src="img/main-carousel-1.png" alt="Hero Image 1">
+                    </div>
+                    <div class="hero-item">
+                        <img src="img/main-carousel-2.png" alt="Hero Image 2">
+                    </div>
+                    <div class="hero-item">
+                        <img src="img/main-carousel-3.png" alt="Hero Image 3">
+                    </div>
+                    <div class="hero-item">
+                        <img src="img/main-carousel-4.png" alt="Hero Image 4">
+                    </div>
+                    <div class="hero-item">
+                        <img src="img/main-carousel-5.png" alt="Hero Image 5">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission" class="section-compact scroll-mt bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-blue-600">Our Mission</h2>
+                
+                <!-- Mission Statement -->
+                <p class="text-xl text-center mb-12 max-w-3xl mx-auto">
+                    Our mission is to empower communities worldwide through sustainable development, fostering dignity, and creating lasting positive change.
+                </p>
+                
+                <!-- Three Columns -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Vision -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-600">Our Vision</h3>
+                        <p>A world where every individual has the opportunity to live with dignity, access to essential resources, and the ability to shape their own future.</p>
+                    </div>
+                    
+                    <!-- Purpose -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-600">Our Purpose</h3>
+                        <p>To bridge the gap between communities in need and sustainable solutions, fostering self-reliance and long-term prosperity.</p>
+                    </div>
+                    
+                    <!-- Objectives -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-600">Our Objectives</h3>
+                        <ul class="list-disc pl-5">
+                            <li>Implement sustainable development projects</li>
+                            <li>Empower local communities through education and training</li>
+                            <li>Promote environmental conservation and sustainable practices</li>
+                            <li>Foster partnerships for greater impact and reach</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sectors" class="section-full-height scroll-mt bg-white">
+            <div class="container mx-auto px-4 py-8">
+                <h2 class="text-3xl font-bold mb-8 text-center text-blue-600">Sectors of Focus</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-800">Women</h3>
+                        <p class="text-lg">
+                            "Empowering women through unwavering rights, radiant dignity, inclusive diversity, and a garden of flourishing opportunities, at Joseph for Dignity's."
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-800">Children</h3>
+                        <p class="text-lg">
+                            "Nurturing a future of promise for children through thriving rights, shining dignity, boundless diversity, and a landscape where opportunities bloom, with Joseph for Dignity's."
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-800">Education</h3>
+                        <p class="text-lg">
+                            "Fostering an educational future where rights prosper, dignity illuminates, diversity unites, and opportunities flourish, under Joseph for Dignity's care."
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-800">Economics</h3>
+                        <p class="text-lg">
+                            "Elevating economies as rights prosper, dignity radiates, diversity converges, and opportunities blossom within Joseph for Dignity's transformative embrace."
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md md:col-span-2 lg:col-span-1">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-800">Opportunities for All</h3>
+                        <p class="text-lg">
+                            "Enabling equitable opportunities for all, as thriving rights, shining dignity, and united diversity converge to create a flourishing reality at Joseph for Dignity's."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stories" class="section-full-height scroll-mt bg-gray-100">
+            <div class="container mx-auto px-4 py-8">
+                <h2 class="text-3xl font-bold mb-8 text-center text-blue-600">Stories of Impact</h2>
+                
+                <div class="flex flex-col md:flex-row">
+                    <!-- Country cards -->
+                    <div class="w-full md:w-1/2 pr-0 md:pr-4 mb-4 md:mb-0">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="country-card bg-white p-4 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow active" data-country="ukraine">
+                                <h3 class="text-xl font-semibold text-center">Ukraine</h3>
+                            </div>
+                            <div class="country-card bg-white p-4 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow" data-country="thailand">
+                                <h3 class="text-xl font-semibold text-center">Thailand</h3>
+                            </div>
+                            <div class="country-card bg-white p-4 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow" data-country="mongolia">
+                                <h3 class="text-xl font-semibold text-center">Mongolia</h3>
+                            </div>
+                            <div class="country-card bg-white p-4 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow" data-country="vietnam">
+                                <h3 class="text-xl font-semibold text-center">Vietnam</h3>
+                            </div>
+                            <div class="country-card bg-white p-4 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow" data-country="uganda">
+                                <h3 class="text-xl font-semibold text-center">Uganda</h3>
+                            </div>
+                            <div class="country-card bg-white p-4 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow" data-country="nepal">
+                                <h3 class="text-xl font-semibold text-center">Nepal</h3>
+                            </div>
+                            <div class="country-card bg-white p-4 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow" data-country="indonesia">
+                                <h3 class="text-xl font-semibold text-center">Indonesia</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carousel -->
+                    <div class="w-full md:w-1/2 pl-0 md:pl-4">
+                        <div id="country-carousel" class="relative overflow-hidden w-full h-96 bg-white rounded-lg shadow-md">
+                            <div class="carousel-inner relative w-full h-full">
+                                <!-- Carousel images will be inserted here by JavaScript -->
+                            </div>
+                            <button id="prevButton" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-r">❮</button>
+                            <button id="nextButton" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-l">❯</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="partners" class="section-compact scroll-mt py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-blue-600">Our Partners</h2>
+                <div class="partner-carousel">
+                    <div class="partner-logo-stream">
+                        <div class="logo-set">
+                            <div class="partner-item">
+                                <img src="img/central-pacific-bank.webp" alt="Central Pacific Bank">
+                                <p>Central Pacific Bank</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/child-foundation.webp" alt="Child Foundation">
+                                <p>Child Foundation</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/goodsill-foundation.webp" alt="Goodsill Foundation">
+                                <p>Goodsill Foundation</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/greenwald-foundation.webp" alt="Greenwald Foundation">
+                                <p>Greenwald Foundation</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/hawaii-foundation.webp" alt="Hawaii Foundation">
+                                <p>Hawaii Foundation</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/j-foundation.webp" alt="J Foundation">
+                                <p>J Foundation</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/k-50.webp" alt="K-50">
+                                <p>K-50</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/mongolia-foundation.webp" alt="Mongolia Foundation">
+                                <p>Mongolia Foundation</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/office-depot.webp" alt="Office Depot">
+                                <p>Office Depot</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/the-vietnam-foundation.webp" alt="The Vietnam Foundation">
+                                <p>The Vietnam Foundation</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/ukraine-foundation.webp" alt="Ukraine Foundation">
+                                <p>Ukraine Foundation</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/vnam-foundation.webp" alt="VNAM Foundation">
+                                <p>VNAM Foundation</p>
+                            </div>
+                        </div>
+                        <div class="logo-set">
+                            <div class="partner-item">
+                                <img src="img/central-pacific-bank.webp" alt="Central Pacific Bank">
+                                <p>Central Pacific Bank</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/child-foundation.webp" alt="Child Foundation">
+                                <p>Child Foundation</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/goodsill-foundation.webp" alt="Goodsill Foundation">
+                                <p>Goodsill Foundation</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/greenwald-foundation.webp" alt="Greenwald Foundation">
+                                <p>Greenwald Foundation</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/hawaii-foundation.webp" alt="Hawaii Foundation">
+                                <p>Hawaii Foundation</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/j-foundation.webp" alt="J Foundation">
+                                <p>J Foundation</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/k-50.webp" alt="K-50">
+                                <p>K-50</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/mongolia-foundation.webp" alt="Mongolia Foundation">
+                                <p>Mongolia Foundation</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/office-depot.webp" alt="Office Depot">
+                                <p>Office Depot</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/the-vietnam-foundation.webp" alt="The Vietnam Foundation">
+                                <p>The Vietnam Foundation</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/ukraine-foundation.webp" alt="Ukraine Foundation">
+                                <p>Ukraine Foundation</p>
+                            </div>
+                            <div class="partner-item">
+                                <img src="img/vnam-foundation.webp" alt="VNAM Foundation">
+                                <p>VNAM Foundation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-gray-100 py-12">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-blue-600">Contact Us</h2>
+                <div class="flex flex-wrap -mx-4">
+                    <!-- Left half: Email contacts -->
+                    <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0 flex justify-center">
+                        <div class="md:pl-22"> <!-- Reduced padding-left for larger screens -->
+                            <div class="flex items-center mb-4">
+                                <a href="mailto:Admin@JFDCharity.org" class="text-blue-600 hover:text-blue-800 mr-2">
+                                    <i class="fas fa-envelope text-xl"></i>
+                                </a>
+                                <span class="text-black">Admin@JFDCharity.org</span>
+                            </div>
+                            <div class="flex items-center">
+                                <a href="mailto:Mel@JFDCharity.org" class="text-blue-600 hover:text-blue-800 mr-2">
+                                    <i class="fas fa-envelope text-xl"></i>
+                                </a>
+                                <span class="text-black">Mel@JFDCharity.org</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right half: Newsletter subscription -->
+                    <div class="w-full md:w-1/2 px-4">
+                        <h3 class="text-xl font-bold mb-4">Subscribe to Our Newsletter</h3>
+                        <form class="flex flex-col sm:flex-row">
+                            <input type="email" placeholder="Your email" class="flex-grow p-2 mb-2 sm:mb-0 sm:mr-2 text-gray-800 border rounded">
+                            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="#" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded inline-block transition duration-300">
+                        Donate Now
+                    </a>
+                </div>
+                <div>
+                    <p>&copy; 2023 Joseph for Dignity. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const header = document.getElementById('header');
+        const headerContainer = header.querySelector('.container');
+        const logo = document.getElementById('logo');
+        const navLinks = document.getElementById('nav-links');
+        const donateBtn = document.getElementById('donate-btn');
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                header.classList.add('py-1');
+                header.classList.remove('py-2');
+                headerContainer.classList.remove('py-2');
+                headerContainer.classList.add('py-1');
+                logo.classList.remove('h-12');
+                logo.classList.add('h-8');
+                navLinks.classList.add('text-xs');
+                navLinks.classList.remove('text-sm');
+                donateBtn.classList.remove('py-1', 'px-3', 'text-sm');
+                donateBtn.classList.add('py-0.5', 'px-2', 'text-xs');
+            } else {
+                // Scrolling up
+                if (scrollTop === 0) {
+                    // At the top of the page
+                    header.classList.remove('py-1');
+                    header.classList.add('py-2');
+                    headerContainer.classList.remove('py-1');
+                    headerContainer.classList.add('py-2');
+                    logo.classList.remove('h-8');
+                    logo.classList.add('h-12');
+                    navLinks.classList.remove('text-xs');
+                    navLinks.classList.add('text-sm');
+                    donateBtn.classList.remove('py-0.5', 'px-2', 'text-xs');
+                    donateBtn.classList.add('py-1', 'px-3', 'text-sm');
+                }
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        }, false);
+    </script>
+</body>
+</html>

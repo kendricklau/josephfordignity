@@ -1,0 +1,401 @@
+/* Custom styles can be added here if needed */
+.carousel, .partner-carousel {
+    overflow: hidden;
+}
+
+.carousel-inner, .partner-carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-inner img, .partner-carousel-inner img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+#sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+#sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+#sticky-nav.sticky {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add a subtle shadow when sticky */
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #2563eb; /* Tailwind's blue-600 */
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-inner img {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.section-full-height {
+    min-height: 550px; /* Match the minimum height of the carousel */
+    padding: 2rem 0; /* Reduce padding */
+    display: flex;
+    align-items: center;
+}
+
+.section-compact {
+    min-height: 60vh; /* Even shorter for sections with less content */
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.country-card {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.country-card:hover {
+    transform: translateY(-5px);
+}
+
+.country-card.active {
+    background-color: #3B82F6; /* Tailwind's blue-500 */
+    color: white;
+}
+
+#country-carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-inner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-inner img.active {
+    opacity: 1;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 640px) {
+    .section-full-height {
+        min-height: calc(100vh - 80px); /* Adjust if header is smaller on mobile */
+    }
+    
+    #sectors .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    #sectors h2 {
+        font-size: 1.75rem;
+    }
+    
+    #sectors h3 {
+        font-size: 1.5rem;
+    }
+    
+    #sectors p {
+        font-size: 1rem;
+    }
+}
+
+/* Ensure content doesn't overflow on very short screens */
+@media (max-height: 600px) {
+    .section-full-height,
+    .section-compact {
+        min-height: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+#main-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px; /* Adjust this value to match your largest image width */
+    margin: 0 auto;
+}
+
+#main-carousel .carousel-inner {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+#main-carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#main-carousel img.active {
+    opacity: 1;
+}
+
+#logo-donate {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+#logo-donate img {
+    max-width: 100%;
+    height: auto;
+}
+
+#logo-donate a {
+    transition: transform 0.3s ease;
+}
+
+#logo-donate a:hover {
+    transform: translateY(-2px);
+}
+
+/* New media query to maintain aspect ratio on smaller screens */
+@media (max-width: 768px) {
+    #main-carousel {
+        height: auto; /* Allow height to adjust based on content */
+        aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+    }
+}
+
+#main-prevButton,
+#main-nextButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#main-prevButton {
+    left: 0;
+}
+
+#main-nextButton {
+    right: 0;
+}
+
+#main-prevButton:hover,
+#main-nextButton:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+#main-prevButton span,
+#main-nextButton span {
+    color: #333;
+    font-size: 24px;
+}
+
+.preview-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.preview-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#main-prevButton:hover .preview-img img,
+#main-nextButton:hover .preview-img img {
+    transform: scale(1.1);
+}
+
+.header-logo {
+    height: 4px; /* Increased from 48px to 64px */
+    width: auto;
+    max-width: 100%;
+}
+
+header {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .header-logo {
+        height: 48px; /* Slightly smaller on mobile devices */
+    }
+}
+
+.donation-logo {
+    height: 128px; /* or your desired height */
+    width: auto;
+    max-width: 100%;
+}
+
+.partner-carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 150px; /* Increased to accommodate logo names */
+}
+
+.partner-logo-stream {
+    display: flex;
+    position: absolute;
+    animation: scroll 60s linear infinite; /* Increased duration for slower scroll */
+}
+
+.logo-set {
+    display: flex;
+    align-items: center;
+}
+
+.partner-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.partner-item img {
+    height: 80px; /* Adjust as needed */
+    width: auto;
+    object-fit: contain;
+}
+
+.partner-item p {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+    max-width: 100px; /* Adjust based on your needs */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause animation on hover */
+.partner-carousel:hover .partner-logo-stream {
+    animation-play-state: paused;
+}
+
+/* Ensure the stream is wide enough */
+.partner-logo-stream {
+    width: 200%; /* Adjust if needed */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .partner-carousel {
+        height: 120px; /* Smaller height for mobile */
+    }
+    
+    .partner-item img {
+        height: 60px; /* Smaller logos for mobile */
+    }
+    
+    .partner-item p {
+        font-size: 10px;
+    }
+}
+
+body {
+    padding-top: 64px; /* Adjust this value based on your initial header's height */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 56px; /* Adjust for mobile */
+    }
+}
+
+.scroll-mt {
+    scroll-margin-top: 64px; /* Adjust this value to match your header height */
+}
+
+@media (max-width: 768px) {
+    .scroll-mt {
+        scroll-margin-top: 56px; /* Adjust for mobile header height */
+    }
+}
+
+.hero-carousel {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    background-color: white; /* Add a background color */
+}
+
+.hero-logo-stream {
+    display: flex;
+    gap: 5px;
+    animation: hero-stream 120s linear infinite; /* Doubled the duration to slow down */
+}
+
+.hero-item {
+    flex: 0 0 550px;
+    height: 550px;
+}
+
+.hero-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes hero-stream {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-550px * 5 - 25px)); /* 5 images plus 5 gaps */
+    }
+}
+
+#hero-carousel {
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+}
